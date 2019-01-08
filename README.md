@@ -1,2 +1,2 @@
-# CSC340-Databases
+# CSCI-340-Databases
 This is the databases I took at Houghton College 
