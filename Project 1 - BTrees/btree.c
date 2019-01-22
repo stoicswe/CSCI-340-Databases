@@ -8,13 +8,16 @@
 /* Slight modifications by Ryan Yates */
 
 //default size is: 1024
-#define MAX_KEYS (1024)
+//--------------------------------------
 //#define MAX_KEYS (4)
-//#define MAX_KEYS (6)
 //#define MAX_KEYS (8)
-//#define MAX_KEYS (10)
-//#define MAX_KEYS (12)
-//#define MAX_KEYS (14)
+//#define MAX_KEYS (16)
+//#define MAX_KEYS (32)
+//#define MAX_KEYS (64)
+//#define MAX_KEYS (128)
+//#define MAX_KEYS (256)
+//#define MAX_KEYS (512)
+#define MAX_KEYS (1024)
 
 /* type for keys */
 typedef int KEY;
@@ -294,10 +297,12 @@ int main(int argc, char **argv)
     /*******************************************************/
     int height = 0;
     int size = 0;
-    printf("Searching... \n");
-    height = searchCount(b, 13, 0, 0);
     printf("Max Keys: ");
     printf("%d\n", MAX_KEYS);
+    printf("Items in tree: ");
+    printf("%d\n", btree_size);
+    printf("Searching... \n");
+    height = searchCount(b, 13, 0, 0);
     printf("Height of tree: ");
     printf("%d\n", height);
     printf("Size (bits) of Tree: ");
