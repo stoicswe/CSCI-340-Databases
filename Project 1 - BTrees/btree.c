@@ -6,7 +6,15 @@
 /* Exploring B-Trees.  */
 /* Code from: http://www.cs.yale.edu/homes/aspnes/pinewiki/BTrees.html */
 /* Slight modifications by Ryan Yates */
+
+//default size is: 1024
 #define MAX_KEYS (1024)
+//#define MAX_KEYS (4)
+//#define MAX_KEYS (6)
+//#define MAX_KEYS (8)
+//#define MAX_KEYS (10)
+//#define MAX_KEYS (12)
+//#define MAX_KEYS (14)
 
 /* type for keys */
 typedef int KEY;
@@ -105,6 +113,35 @@ int search(btree b, KEY key)
 /* returns new right sibling if the node splits */
 /* and puts the median in *median */
 /* else returns 0 */
+
+int searchCount(btree b, KEY key, int layer_count, int size)
+{
+    int pos;
+
+    /* have to check for empty tree */
+    if(b->numKeys == 0) {
+        return 0;
+    }
+
+    /* look for smallest position that key fits below */
+    pos = searchKey(b->numKeys, b->keys, key);
+
+    if(pos < b->numKeys && b->keys[pos] == key) {
+        size += sizeof(b);
+        layer_count++;
+        printf("L%d  ", layer_count);
+        printf("%db\n", size);
+        return layer_count;
+    } else {
+        size += sizeof(b);
+        layer_count++;
+        printf("L%d  ", layer_count);
+        printf("%db\n", size);
+        return(!b->isLeaf && searchCount(b->kids[pos], key, layer_count, size));
+    }
+}
+
+
 btree insertInternal(btree b, KEY key, KEY* median)
 {
     int pos;
@@ -218,6 +255,7 @@ int main(int argc, char **argv)
 
     /* Put your code to find the size of each node here: */
     /* printf(... */
+      int btree_size = 10000000;
 
     b = create();
     assert(b);
@@ -243,7 +281,7 @@ int main(int argc, char **argv)
     destroy(b);
 
     b = create();
-    for(i = 0; i < 10000000; i += 2) {
+    for(i = 0; i < btree_size; i += 2) {
         assert(search(b, i) == 0);
         insert(b, i);
         assert(search(b, i+1) == 0);
@@ -254,6 +292,16 @@ int main(int argc, char **argv)
     /* At this point the tree `b` has 5 million even keys. */
     /* Put your test for height here.                      */
     /*******************************************************/
+    int height = 0;
+    int size = 0;
+    printf("Searching... \n");
+    height = searchCount(b, 13, 0, 0);
+    printf("Max Keys: ");
+    printf("%d\n", MAX_KEYS);
+    printf("Height of tree: ");
+    printf("%d\n", height);
+    printf("Size (bits) of Tree: ");
+    printf("%d\n", size);
 
     destroy(b);
 
