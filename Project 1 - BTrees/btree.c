@@ -117,30 +117,30 @@ int search(btree b, KEY key)
 /* and puts the median in *median */
 /* else returns 0 */
 
-int searchCount(btree b, KEY key, int layer_count, int size)
+//write a helper function to call
+
+int searchCount(btree b, KEY key)
 {
     int pos;
+    int layerCount = 1;
 
     /* have to check for empty tree */
     if(b->numKeys == 0) {
-        return 0;
+        return 1;
     }
 
     /* look for smallest position that key fits below */
+    // doesnt change the nuber of nodes looked at
     pos = searchKey(b->numKeys, b->keys, key);
 
     if(pos < b->numKeys && b->keys[pos] == key) {
-        size += sizeof(b);
-        layer_count++;
-        printf("L%d  ", layer_count);
-        printf("%db\n", size);
-        return layer_count;
+        return 1;
     } else {
-        size += sizeof(b);
-        layer_count++;
-        printf("L%d  ", layer_count);
-        printf("%db\n", size);
-        return(!b->isLeaf && searchCount(b->kids[pos], key, layer_count, size));
+        if (b->isLeaf)
+        {
+            return 1;
+        }
+        return 1 + searchCount(b->kids[pos], key);
     }
 }
 
@@ -300,13 +300,15 @@ int main(int argc, char **argv)
     printf("Max Keys: ");
     printf("%d\n", MAX_KEYS);
     printf("Items in tree: ");
-    printf("%d\n", btree_size);
+    printf("%d\n", btree_size/2);
     printf("Searching... \n");
-    height = searchCount(b, 13, 0, 0);
+    height = searchCount(b, 13);
     printf("Height of tree: ");
     printf("%d\n", height);
-    printf("Size (bits) of Tree: ");
-    printf("%d\n", size);
+    printf("Size (double nibbles) of Node: ");
+    printf("%ld\n", sizeof(node));
+    printf("Size of Tree in memory: ");
+    printf("%ld\n", sizeof(node)*((btree_size/2)/MAX_KEYS));
 
     destroy(b);
 
