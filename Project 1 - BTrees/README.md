@@ -17,6 +17,7 @@ real    0m7.835s
 user    0m7.516s
 sys     0m0.297s
 ----------------------------------------
+##BEST FOR HD:
 Max Keys: 8
 Items in tree: 5000000
 Searching...
@@ -50,6 +51,7 @@ real    0m5.904s
 user    0m5.703s
 sys     0m0.172s
 ----------------------------------------
+##BEST FOR MEMORY:
 Max Keys: 64
 Items in tree: 5000000
 Searching...
@@ -72,6 +74,7 @@ real    0m5.021s
 user    0m4.813s
 sys     0m0.172s
 -----------------------------------------
+##BEST FOR SSD:
 Max Keys: 256
 Items in tree: 5000000
 Searching...
@@ -94,6 +97,7 @@ real    0m5.667s
 user    0m5.516s
 sys     0m0.141s
 ------------------------------------------
+##BEST FOR THE NETWORK
 Max Keys: 1024
 Items in tree: 5000000
 Searching...
