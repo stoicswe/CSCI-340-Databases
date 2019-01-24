@@ -9,6 +9,7 @@
 
 //default size is: 1024
 //--------------------------------------
+#define MAX_KEYS (2)
 //#define MAX_KEYS (4)
 //#define MAX_KEYS (8)
 //#define MAX_KEYS (16)
@@ -17,7 +18,7 @@
 //#define MAX_KEYS (128)
 //#define MAX_KEYS (256)
 //#define MAX_KEYS (512)
-#define MAX_KEYS (1024)
+//#define MAX_KEYS (1024)
 
 /* type for keys */
 typedef int KEY;
