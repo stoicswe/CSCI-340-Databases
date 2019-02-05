@@ -1,0 +1,53 @@
+SELECT title FROM Posts WHERE posttypeid = 1 ORDER BY score DESC LIMIT 5;
+
+psql (10.6 (Ubuntu 10.6-0ubuntu0.18.04.1))
+SSL connection (protocol: TLSv1.2, cipher: ECDHE-RSA-AES256-GCM-SHA384, bits: 256, compression: off)
+Type "help" for help.
+
+Three given queries that has been run:
+
+===============================================================================================
+
+cooking=> SELECT title FROM Posts WHERE posttypeid = 1 ORDER BY score DESC LIMIT 5;
+                             title                              
+----------------------------------------------------------------
+ How can I chop onions without crying?
+ Translating cooking terms between US / UK / AU / CA / NZ
+ Why add salt to the water when cooking pasta?
+ Why would boiling milk in an electric kettle break the kettle?
+ What is this colored fiber in my chicken?
+(5 rows)
+
+===============================================================================================
+
+cooking=> SELECT reputation,displayname FROM users ORDER BY reputation DESC LIMIT 5;
+ reputation | displayname  
+------------+--------------
+      77759 | rumtscho
+      67203 | SAJ14SAJ
+      59803 | Joe
+      52299 | Cascabel
+      50322 | Jolenealaska
+(5 rows)
+
+cooking=> 
+
+===============================================================================================
+
+cooking=> SELECT displayname,ownerdisplayname FROM users
+cooking->       INNER JOIN posts ON users.id = owneruserid
+cooking->       WHERE displayname <> ownerdisplayname;
+     displayname      | ownerdisplayname 
+----------------------+------------------
+ Artificial Stupidity | Yasashii Eirian
+ Netizen              | IamSJ
+ Fahed                | Fahed Fahed
+ Roux A               | Hershe A
+ davidscolgan         | dvcolgan
+ lamwaiman1988        | gunbuster363
+ Danubian Sailor      | lechlukasz
+ Hank                 | Henry Jackson
+(8 rows)
+
+cooking=> 
+
