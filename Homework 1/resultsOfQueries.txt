@@ -18,6 +18,11 @@ cooking=> SELECT title FROM Posts WHERE posttypeid = 1 ORDER BY score DESC LIMIT
  What is this colored fiber in my chicken?
 (5 rows)
 
+What this query is doing:
+This query is selecting all titles from the POST table, which have a posttype equal to 1. These
+posts are then ordered in descending order from greatest to least, by the score for each post.
+Then after doing that, it is only selecting the top 5 from the top of the list to display.
+
 ===============================================================================================
 
 cooking=> SELECT reputation,displayname FROM users ORDER BY reputation DESC LIMIT 5;
@@ -31,6 +36,11 @@ cooking=> SELECT reputation,displayname FROM users ORDER BY reputation DESC LIMI
 (5 rows)
 
 cooking=> 
+
+What this query is doing:
+This query is selecting the values from both the reoutation and displayname from the USERS table.
+Then it is arranging this data in descending order by their reputation. After that, it is selecting the
+top 5 from that list to display.
 
 ===============================================================================================
 
@@ -50,4 +60,9 @@ cooking->       WHERE displayname <> ownerdisplayname;
 (8 rows)
 
 cooking=> 
+
+What this query is doing:
+This query is selecting the displayname and ownerdisplayname from the USERS table. Then it is combining
+those results with the posts associated wiht the users.id column that matches the same id as the owneruserid,
+where the displayname is equal to the ownerdisplayname.
 
