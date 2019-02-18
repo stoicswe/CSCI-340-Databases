@@ -1,3 +1,11 @@
+NATHANIEL BUNCH
+HOMEWORK 1
+
+
+===============================================================================
+PART 1:
+===============================================================================
+
 SELECT title FROM Posts WHERE posttypeid = 1 ORDER BY score DESC LIMIT 5;
 
 psql (10.6 (Ubuntu 10.6-0ubuntu0.18.04.1))
@@ -66,3 +74,126 @@ This query is selecting the displayname and ownerdisplayname from the USERS tabl
 those results with the posts associated wiht the users.id column that matches the same id as the owneruserid,
 where the displayname is equal to the ownerdisplayname.
 
+===============================================================================
+PART 2:
+===============================================================================
+
+PART A:
+SELECT id,tags FROM posts LIMIT 5;
+//This is the only query I had trouble wiht, I'm not sure how to perform this query.
+
+-------------------------------------------------------------------------------
+PART B:
+cooking=> SELECT COUNT(creationdate) FROM posts WHERE EXTRACT(dow FROM creationdate) = 5;
+ count 
+-------
+ 10175
+(1 row)
+
+What this query is doing:
+THis query is grabbing the count of all the columns which contain the creation date that occurs on a friday.
+
+-------------------------------------------------------------------------------
+PART C:
+cooking=> SELECT COUNT(creationdate) FROM posts WHERE EXTRACT(month FROM creationdate) = 1;
+  6348
+cooking=> SELECT COUNT(creationdate) FROM posts WHERE EXTRACT(month FROM creationdate) = 2;
+  5663
+cooking=> SELECT COUNT(creationdate) FROM posts WHERE EXTRACT(month FROM creationdate) = 3;
+  5770
+cooking=> SELECT COUNT(creationdate) FROM posts WHERE EXTRACT(month FROM creationdate) = 4;
+  4991
+cooking=> SELECT COUNT(creationdate) FROM posts WHERE EXTRACT(month FROM creationdate) = 5;
+  4689
+cooking=> SELECT COUNT(creationdate) FROM posts WHERE EXTRACT(month FROM creationdate) = 6;
+  4325
+cooking=> SELECT COUNT(creationdate) FROM posts WHERE EXTRACT(month FROM creationdate) = 7;
+  7958
+cooking=> SELECT COUNT(creationdate) FROM posts WHERE EXTRACT(month FROM creationdate) = 8;
+  7084
+cooking=> SELECT COUNT(creationdate) FROM posts WHERE EXTRACT(month FROM creationdate) = 9;
+  5870
+cooking=> SELECT COUNT(creationdate) FROM posts WHERE EXTRACT(month FROM creationdate) = 10;
+  5732
+cooking=> SELECT COUNT(creationdate) FROM posts WHERE EXTRACT(month FROM creationdate) = 11;
+  5971
+cooking=> SELECT COUNT(creationdate) FROM posts WHERE EXTRACT(month FROM creationdate) = 12;
+  6040
+
+Month with the most activity: 7 (July)
+
+What this query does:
+This query will count all the rows where the creation date is equal to a specific month. Doing this query for each month
+will result in the activity per month, which enables us to deduct which month contained the most activity.
+
+===============================================================================
+PART 3:
+===============================================================================
+
+cooking=> SELECT reputation,displayname,accountid FROM users ORDER BY reputation DESC LIMIT 5;
+ reputation | displayname  | accountid 
+------------+--------------+-----------
+      77759 | rumtscho     |    266065
+      67203 | SAJ14SAJ     |   1148237
+      59803 | Joe          |     48394
+      52299 | Cascabel     |     41301
+      50322 | Jolenealaska |   3302527
+(5 rows)
+
+What this query does:
+This query gets the infromation for the top five most reputable people on the cooking stack overflow community.
+
+------------------------------------------------------------------------------
+cooking=> SELECT title,score,ownerdisplayname FROM posts ORDER BY score DESC LIMIT 20;
+                             title                              | score | ownerdisplayname 
+----------------------------------------------------------------+-------+------------------
+                                                                |   257 | 
+ How can I chop onions without crying?                          |   245 | 
+                                                                |   210 | 
+                                                                |   196 | 
+                                                                |   181 | 
+ Translating cooking terms between US / UK / AU / CA / NZ       |   165 | 
+                                                                |   152 | 
+                                                                |   152 | 
+ Why add salt to the water when cooking pasta?                  |   150 | 
+                                                                |   143 | 
+ Why would boiling milk in an electric kettle break the kettle? |   142 | 
+                                                                |   142 | 
+                                                                |   135 | 
+ What is this colored fiber in my chicken?                      |   129 | 
+ Is it possible to cook a whole fish in a dishwasher?           |   125 | 
+                                                                |   118 | 
+ How do you properly cook a steak?                              |   114 | 
+ How can I tell the difference between a rabbit and a cat?      |   113 | 
+                                                                |   113 | 
+                                                                |   111 | user73
+(20 rows)
+
+cooking=> SELECT reputation,views,upvotes,downvotes,displayname FROM users WHERE displayname='user73';
+ reputation | views | upvotes | downvotes | displayname 
+------------+-------+---------+-----------+-------------
+(0 rows)
+
+cooking=> 
+
+What this query does:
+What this query is suppose to do is to get the account information for the username who posted
+a high score post. As one can notice, people's usernames did not come up until 20 rows into the data,
+and when that user was searched, there was no data on that particular user.
+
+------------------------------------------------------------------------------
+
+cooking=> SELECT DISTINCT location,reputation FROM users ORDER BY reputation DESC LIMIT 5;
+            location            | reputation 
+--------------------------------+------------
+ Germany                        |      77759
+ Maryland                       |      67203
+ Maryland                       |      59803
+ USA                            |      52299
+ Probably somewhat north of you |      50322
+(5 rows)
+
+cooking=> 
+
+What this query does:
+THis query grabs the top five most reputable people's locations.
