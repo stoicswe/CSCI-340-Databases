@@ -16,6 +16,7 @@ public class DBConnect {
         Properties props = new Properties();
         props.setProperty("user", user);
         props.setProperty("password", password);
+        props.setProperty("ssl","true");
         try {
             this.conn = DriverManager.getConnection(format, props);
             this.conn.setAutoCommit(true);
