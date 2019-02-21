@@ -33,9 +33,7 @@ public class MainClass {
             sc1 = r1.getInt("score");
             sc2 = r2.getInt("score");
             sc3 = r3.getInt("score");
-        } catch (Exception e){
-
-        }
+        } catch (Exception e){System.out.println(e);}
         System.out.println("===================================");
         System.out.println("Highest Result");
         if (sc1 < sc2){
@@ -57,9 +55,9 @@ public class MainClass {
         int numberOfRows = 0;
         try{
             numberOfRows = results.getRow();
-        } catch (Exception e){}
+        } catch (Exception e){System.out.println(e);}
         for(int i = 0; i < numberOfRows; i++){
-            
+
         }
         //for each user id in results, check if another user shares a question id, if so...then connect for the graph file.
         //===================================
