@@ -57,7 +57,7 @@ public class MainClass {
             numberOfRows = results.getRow();
         } catch (Exception e){System.out.println(e);}
         for(int i = 0; i < numberOfRows; i++){
-
+            
         }
         //for each user id in results, check if another user shares a question id, if so...then connect for the graph file.
         //===================================
