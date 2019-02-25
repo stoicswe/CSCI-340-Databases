@@ -2,11 +2,8 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="4ee50a36-911c-42f3-a929-e368f3e29c95" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/SQL Program/MainClass.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/SQL Program/MainClass.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/SQL Program/Question.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/DBConnect.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/DBConnect.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/MainClass.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/MainClass.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/user-relationships.txt" beforeDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -20,8 +17,8 @@
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/MainClass.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="245">
-              <caret line="170" column="68" selection-start-line="170" selection-start-column="68" selection-end-line="170" selection-end-column="68" />
+            <state relative-caret-position="214">
+              <caret line="163" column="92" lean-forward="true" selection-start-line="163" selection-start-column="92" selection-end-line="163" selection-end-column="92" />
               <folding>
                 <element signature="imports" expanded="true" />
                 <element signature="e#5858#5866#0" expanded="true" />
@@ -117,7 +114,7 @@
     </panes>
   </component>
   <component name="PropertiesComponent">
-    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1551116922706" />
+    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1551117855628" />
     <property name="project.structure.last.edited" value="Modules" />
     <property name="project.structure.proportion" value="0.0" />
     <property name="project.structure.side.proportion" value="0.0" />
@@ -223,8 +220,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/MainClass.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="245">
-          <caret line="170" column="68" selection-start-line="170" selection-start-column="68" selection-end-line="170" selection-end-column="68" />
+        <state relative-caret-position="214">
+          <caret line="163" column="92" lean-forward="true" selection-start-line="163" selection-start-column="92" selection-end-line="163" selection-end-column="92" />
           <folding>
             <element signature="imports" expanded="true" />
             <element signature="e#5858#5866#0" expanded="true" />

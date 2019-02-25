@@ -161,17 +161,17 @@ public class MainClass {
                     if (userIds.contains(p2.owner)) {
                         User u1 = users.get(p.owner);
                         User u2 = users.get(p2.owner);
-                        connect.add(u1.displayName + " -- " + u2.displayName);
+                        connect.add("'" + u1.displayName + "' -- '" + u2.displayName + "'");
                     }
                 }
             }
         }
         System.out.println(connect);
         try {
-            PrintWriter writer = new PrintWriter("user-relationships.txt", "UTF-8");
+            PrintWriter writer = new PrintWriter("user-relationships.dot", "UTF-8");
             writer.println("digraph G {");
             for(String ln : connect){
-                writer.println("    " + ln);
+                writer.println("    " + ln + ";");
             }
             writer.println("}");
             writer.close();
