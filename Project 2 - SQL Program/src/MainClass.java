@@ -12,7 +12,7 @@ public class MainClass {
         sql.select("SELECT (id,score) FROM posts ORDER BY score DESC;");
         System.out.println(sql.getResults());
         ResultSet topScores = sql.getResults();
-        
+
         //===================================
         //Pick a holiday and try to find the highest scoring answers relevant to that holiday.
         sql.select("SELECT (id,creationdate,score) FROM posts WHERE date(creationdate) = date('10/31/2016') ORDER BY score DESC LIMIT 1;");
