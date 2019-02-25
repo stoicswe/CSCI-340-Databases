@@ -7,13 +7,12 @@ public class MainClass {
         c.setConnection("cooking", "cslab", "TacoSh@ck");
         Connection conn = c.getConnection();
         SQLHandle sql = new SQLHandle(conn);
-        //String query = "SELECT * FROM questions";
-        //sql.update(query);
         //===================================
         //Find the highest scoring question with a unique tag.
-        //this one I'm not sure how to do
         sql.select("SELECT (id,score) FROM posts ORDER BY score DESC;");
         System.out.println(sql.getResults());
+        ResultSet topScores = sql.getResults();
+
         //===================================
         //Pick a holiday and try to find the highest scoring answers relevant to that holiday.
         sql.select("SELECT (id,creationdate,score) FROM posts WHERE date(creationdate) = date('10/31/2016') ORDER BY score DESC LIMIT 1;");
