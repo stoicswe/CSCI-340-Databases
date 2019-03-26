@@ -7,6 +7,16 @@
 
   <ItemGroup>
     <PackageReference Include="Npgsql" Version="4.0.5" />
+    <PackageReference Include="Terminal.Gui" Version="0.20.0" />
   </ItemGroup>
 
+  <ItemGroup>
+    <Folder Include="DBOverflow\" />
+    <Folder Include="DBOverflow\Interface\" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Remove="DBOverflow\InterfaceObject.cs" />
+    <Compile Remove="DBOverflow\Interface\Home.cs" />
+    <Compile Remove="DBOverflow\Interface\UnansweredQuestions.cs" />
+  </ItemGroup>
 </Project>

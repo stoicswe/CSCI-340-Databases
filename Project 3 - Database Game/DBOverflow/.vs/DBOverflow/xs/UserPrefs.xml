@@ -1,0 +1,29 @@
+﻿<Properties StartupConfiguration="{7478A5D9-3527-4E23-8501-D03E4211570A}|Default">
+  <MonoDevelop.Ide.Workbench ActiveDocument="DBOverflow/DBOverflow/DBOverflowApplication.cs">
+    <Files>
+      <File FileName="DBOverflow/DBOverflow/DBOverflowApplication.cs" Line="119" Column="42" />
+    </Files>
+    <Pads>
+      <Pad Id="ProjectPad">
+        <State name="__root__">
+          <Node name="DBOverflow" expanded="True">
+            <Node name="DBOverflow" expanded="True">
+              <Node name="DBConnection" expanded="True" />
+              <Node name="DBOverflow" expanded="True">
+                <Node name="Interface" expanded="True" />
+                <Node name="DBOverflowApplication.cs" selected="True" />
+              </Node>
+            </Node>
+          </Node>
+        </State>
+      </Pad>
+    </Pads>
+  </MonoDevelop.Ide.Workbench>
+  <MonoDevelop.Ide.ItemProperties.DBOverflow PreferredExecutionTarget="MonoDevelop.Default" />
+  <MonoDevelop.Ide.DebuggingService.PinnedWatches />
+  <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" />
+  <MonoDevelop.Ide.DebuggingService.Breakpoints>
+    <BreakpointStore />
+  </MonoDevelop.Ide.DebuggingService.Breakpoints>
+  <MultiItemStartupConfigurations />
+</Properties>

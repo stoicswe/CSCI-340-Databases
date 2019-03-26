@@ -1,14 +1,15 @@
 {
   "runtimeTarget": {
     "name": ".NETCoreApp,Version=v2.1",
-    "signature": "10a0d8396fc30fd77023ef9ae2988f737ec1d4f9"
+    "signature": "b851531dd1a30d57bd2648b8574e7bf3558c12fa"
   },
   "compilationOptions": {},
   "targets": {
     ".NETCoreApp,Version=v2.1": {
       "DBOverflow/1.0.0": {
         "dependencies": {
-          "Npgsql": "4.0.5"
+          "Npgsql": "4.0.5",
+          "Terminal.Gui": "0.20.0"
         },
         "runtime": {
           "DBOverflow.dll": {}
@@ -28,6 +29,14 @@
           }
         }
       },
+      "NStack.Core/0.11.0": {
+        "runtime": {
+          "lib/netstandard1.5/NStack.dll": {
+            "assemblyVersion": "1.0.0.0",
+            "fileVersion": "1.0.0.0"
+          }
+        }
+      },
       "System.Memory/4.5.2": {},
       "System.Runtime.CompilerServices.Unsafe/4.5.2": {
         "runtime": {
@@ -38,7 +47,19 @@
         }
       },
       "System.Threading.Tasks.Extensions/4.5.2": {},
-      "System.ValueTuple/4.5.0": {}
+      "System.ValueTuple/4.5.0": {},
+      "Terminal.Gui/0.20.0": {
+        "dependencies": {
+          "NStack.Core": "0.11.0",
+          "System.ValueTuple": "4.5.0"
+        },
+        "runtime": {
+          "lib/netcoreapp2.0/Terminal.Gui.dll": {
+            "assemblyVersion": "1.0.0.0",
+            "fileVersion": "1.0.0.0"
+          }
+        }
+      }
     }
   },
   "libraries": {
@@ -53,6 +74,13 @@
       "sha512": "sha512-gKEhp3ICU2TY3yLnxda9QJf3g6aDHZ/PkRFoPXbjFjuCX18jbY58EYP7VGpXSzfzsQAGSOEB9vjdgEfnnvnRyQ==",
       "path": "npgsql/4.0.5",
       "hashPath": "npgsql.4.0.5.nupkg.sha512"
+    },
+    "NStack.Core/0.11.0": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-W3P+G96bSAUa9AdCZMvFNjUt0IICkbtGZAj4FaMG/abTH6lgwJNT7WvCng4ZCKn9yMMotslQnfsT1d3/PAyK3A==",
+      "path": "nstack.core/0.11.0",
+      "hashPath": "nstack.core.0.11.0.nupkg.sha512"
     },
     "System.Memory/4.5.2": {
       "type": "package",
@@ -81,6 +109,13 @@
       "sha512": "sha512-xZtSZNEHGa+tGsKuP4sh257vxJ/yemShz4EusmomkynMzuEDDjVaErBNewpzEF6swUgbcrSQAX3ELsEp1zCOwA==",
       "path": "system.valuetuple/4.5.0",
       "hashPath": "system.valuetuple.4.5.0.nupkg.sha512"
+    },
+    "Terminal.Gui/0.20.0": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-rtv/hOIebrTt98Mv8WLq73yxJ81RMwvIotEaeGI2rFmKGJMyakEgTvfUpEcFPlOjbwRYfL4WBJdF0qSSP3icJg==",
+      "path": "terminal.gui/0.20.0",
+      "hashPath": "terminal.gui.0.20.0.nupkg.sha512"
     }
   }
 }

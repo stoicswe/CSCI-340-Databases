@@ -223,6 +223,15 @@
           "lib/netstandard2.0/Npgsql.dll": {}
         }
       },
+      "NStack.Core/0.11.0": {
+        "type": "package",
+        "compile": {
+          "lib/netstandard1.5/NStack.dll": {}
+        },
+        "runtime": {
+          "lib/netstandard1.5/NStack.dll": {}
+        }
+      },
       "System.Memory/4.5.2": {
         "type": "package",
         "compile": {
@@ -258,15 +267,29 @@
         "runtime": {
           "lib/netcoreapp2.0/_._": {}
         }
+      },
+      "Terminal.Gui/0.20.0": {
+        "type": "package",
+        "dependencies": {
+          "NStack.Core": "0.11.0",
+          "System.ValueTuple": "4.4.0"
+        },
+        "compile": {
+          "lib/netcoreapp2.0/Terminal.Gui.dll": {}
+        },
+        "runtime": {
+          "lib/netcoreapp2.0/Terminal.Gui.dll": {}
+        }
       }
     }
   },
   "libraries": {
     "Microsoft.NETCore.App/2.1.0": {
-      "sha512": "AvT774nTFgU8cYcGO9j1EMwuayKslxqYTurg32HGpWa2hEYNuW2+XgYVVNcZe6Ndbr84QX6fwaOZfd5n+1m2OA==",
+      "sha512": "2DtRTpAhUdaPDnBM1R4Tbl1hxLW+3L4/byMonI+7aAQPFRmVeKc1epmM4wpxA4h1E7uK6tSPOBOU7f+MDcY5Bg==",
       "type": "package",
       "path": "microsoft.netcore.app/2.1.0",
       "files": [
+        ".nupkg.metadata",
         ".signature.p7s",
         "LICENSE.TXT",
         "Microsoft.NETCore.App.versions.txt",
@@ -528,10 +551,11 @@
       ]
     },
     "Microsoft.NETCore.DotNetAppHost/2.1.0": {
-      "sha512": "f/47I60Wg3SrveTvnecCQhCZCAMYlUujWF15EQ/AZTqF/54qeEJjbCIAxKcZI8ToUYzSg6JdfrHggsgjCyCE9Q==",
+      "sha512": "cZiASE81rksPJsGJ04hd/uEn6guNGAoqNsrzE/DP6AaNRPCHwTe6nZvHd4uAPj3MaVRQ3U0c6cRycMaHCYLPUQ==",
       "type": "package",
       "path": "microsoft.netcore.dotnetapphost/2.1.0",
       "files": [
+        ".nupkg.metadata",
         ".signature.p7s",
         "LICENSE.TXT",
         "THIRD-PARTY-NOTICES.TXT",
@@ -541,10 +565,11 @@
       ]
     },
     "Microsoft.NETCore.DotNetHostPolicy/2.1.0": {
-      "sha512": "p50yZYKzhH64lmArJgoKjtvsNehECa+/sAuOQzZh5uDNBTbRKxjN8IXP1e517xdVsgrFcSNxSEVDKZIOWVjGcQ==",
+      "sha512": "LdhSWUEZmFalhz6fLBE5WDmCdO9jqvW5q3CUOTk9n/hdmmwnTu7KowPPIw5p2t1vn7ozStLG3RZMJbf48f7WtA==",
       "type": "package",
       "path": "microsoft.netcore.dotnethostpolicy/2.1.0",
       "files": [
+        ".nupkg.metadata",
         ".signature.p7s",
         "LICENSE.TXT",
         "THIRD-PARTY-NOTICES.TXT",
@@ -554,10 +579,11 @@
       ]
     },
     "Microsoft.NETCore.DotNetHostResolver/2.1.0": {
-      "sha512": "fS9D8a+y55n6mHMbNqgHXaPGkjmpVH9h97OyrBxsCuo3Z8aQaFMJ5xIfmzji2ntUd/3truhMbSgSfIelHOkQpg==",
+      "sha512": "+9D7G59Fz1H2ZO87Hlgl7Zv44BrAmWnyRfqrofrHW4gQTu573xQP6cuYiNUeqr189eH6hZuh5MKUhOoUGJjqiQ==",
       "type": "package",
       "path": "microsoft.netcore.dotnethostresolver/2.1.0",
       "files": [
+        ".nupkg.metadata",
         ".signature.p7s",
         "LICENSE.TXT",
         "THIRD-PARTY-NOTICES.TXT",
@@ -567,10 +593,11 @@
       ]
     },
     "Microsoft.NETCore.Platforms/2.1.0": {
-      "sha512": "TT+QCi9LcxGTjBssH7S7n5+8DVcwfG4DYgXX7Dk7+BfZ4oVHj8Q0CbYk9glzAlHLsSt3bYzol+fOdra2iu6GOw==",
+      "sha512": "GmkKfoyerqmsHMn7OZj0AKpcBabD+GaafqphvX2Mw406IwiJRy1pKcKqdCfKJfYmkRyJ6+e+RaUylgdJoDa1jQ==",
       "type": "package",
       "path": "microsoft.netcore.platforms/2.1.0",
       "files": [
+        ".nupkg.metadata",
         ".signature.p7s",
         "LICENSE.TXT",
         "THIRD-PARTY-NOTICES.TXT",
@@ -583,10 +610,11 @@
       ]
     },
     "Microsoft.NETCore.Targets/2.1.0": {
-      "sha512": "etaYwrLZQUS+b3UWTpCnUggd6SQ/ZIkZ5pHnoR7+dIWt/wp2Rv3CvMKOZISsrt7FYCHKwCxfcepuuyEWkQxADg==",
+      "sha512": "I2NAAePyfAzSLl/AWmgNs493xJQDDql2Ldpx3PRl7fE+FrsgdGmVHyyWlfd3doMkxHPstOkqYVGvSLbIBhyzsg==",
       "type": "package",
       "path": "microsoft.netcore.targets/2.1.0",
       "files": [
+        ".nupkg.metadata",
         ".signature.p7s",
         "LICENSE.TXT",
         "THIRD-PARTY-NOTICES.TXT",
@@ -744,6 +772,17 @@
         "npgsql.nuspec"
       ]
     },
+    "NStack.Core/0.11.0": {
+      "sha512": "W3P+G96bSAUa9AdCZMvFNjUt0IICkbtGZAj4FaMG/abTH6lgwJNT7WvCng4ZCKn9yMMotslQnfsT1d3/PAyK3A==",
+      "type": "package",
+      "path": "nstack.core/0.11.0",
+      "files": [
+        ".signature.p7s",
+        "lib/netstandard1.5/NStack.dll",
+        "nstack.core.0.11.0.nupkg.sha512",
+        "nstack.core.nuspec"
+      ]
+    },
     "System.Memory/4.5.2": {
       "sha512": "Ohf9h6em5CjPaAzupGtW/TWMzX6aVfIGPh7bq5KQmfvYJr+DqvOa0cRS9ggFKGIuvKTModCQEacGC/CwE8j7cg==",
       "type": "package",
@@ -864,39 +903,52 @@
         "useSharedDesignerContext.txt",
         "version.txt"
       ]
+    },
+    "Terminal.Gui/0.20.0": {
+      "sha512": "rtv/hOIebrTt98Mv8WLq73yxJ81RMwvIotEaeGI2rFmKGJMyakEgTvfUpEcFPlOjbwRYfL4WBJdF0qSSP3icJg==",
+      "type": "package",
+      "path": "terminal.gui/0.20.0",
+      "files": [
+        ".signature.p7s",
+        "lib/net461/Terminal.Gui.dll",
+        "lib/net461/Terminal.Gui.xml",
+        "lib/netcoreapp2.0/Terminal.Gui.dll",
+        "lib/netcoreapp2.0/Terminal.Gui.xml",
+        "terminal.gui.0.20.0.nupkg.sha512",
+        "terminal.gui.nuspec"
+      ]
     }
   },
   "projectFileDependencyGroups": {
     ".NETCoreApp,Version=v2.1": [
       "Microsoft.NETCore.App >= 2.1.0",
-      "Npgsql >= 4.0.5"
+      "Npgsql >= 4.0.5",
+      "Terminal.Gui >= 0.20.0"
     ]
   },
   "packageFolders": {
-    "C:\\Users\\taran\\.nuget\\packages\\": {},
-    "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder": {}
+    "/Users/taranoshi/.nuget/packages/": {},
+    "/usr/local/share/dotnet/sdk/NuGetFallbackFolder": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\taran\\Documents\\Houghton College Classwork\\CSCI-340-Databases\\Project 3 - Database Game\\DBOverflow\\DBOverflow\\DBOverflow.csproj",
+      "projectUniqueName": "/Users/taranoshi/Documents/Houghton College/CSCI-340-Databases/Project 3 - Database Game/DBOverflow/DBOverflow/DBOverflow.csproj",
       "projectName": "DBOverflow",
-      "projectPath": "C:\\Users\\taran\\Documents\\Houghton College Classwork\\CSCI-340-Databases\\Project 3 - Database Game\\DBOverflow\\DBOverflow\\DBOverflow.csproj",
-      "packagesPath": "C:\\Users\\taran\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\taran\\Documents\\Houghton College Classwork\\CSCI-340-Databases\\Project 3 - Database Game\\DBOverflow\\DBOverflow\\obj\\",
+      "projectPath": "/Users/taranoshi/Documents/Houghton College/CSCI-340-Databases/Project 3 - Database Game/DBOverflow/DBOverflow/DBOverflow.csproj",
+      "packagesPath": "/Users/taranoshi/.nuget/packages/",
+      "outputPath": "/Users/taranoshi/Documents/Houghton College/CSCI-340-Databases/Project 3 - Database Game/DBOverflow/DBOverflow/obj/",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
-        "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
+        "/usr/local/share/dotnet/sdk/NuGetFallbackFolder"
       ],
       "configFilePaths": [
-        "C:\\Users\\taran\\AppData\\Roaming\\NuGet\\NuGet.Config",
-        "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+        "/Users/taranoshi/.config/NuGet/NuGet.Config"
       ],
       "originalTargetFrameworks": [
         "netcoreapp2.1"
       ],
       "sources": {
-        "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
         "https://api.nuget.org/v3/index.json": {}
       },
       "frameworks": {
@@ -914,6 +966,7 @@
       "netcoreapp2.1": {
         "dependencies": {
           "Microsoft.NETCore.App": {
+            "suppressParent": "All",
             "target": "Package",
             "version": "[2.1.0, )",
             "autoReferenced": true
@@ -921,6 +974,10 @@
           "Npgsql": {
             "target": "Package",
             "version": "[4.0.5, )"
+          },
+          "Terminal.Gui": {
+            "target": "Package",
+            "version": "[0.20.0, )"
           }
         },
         "imports": [
