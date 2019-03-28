@@ -1,7 +1,8 @@
 ﻿<Properties StartupConfiguration="{7478A5D9-3527-4E23-8501-D03E4211570A}|Default">
-  <MonoDevelop.Ide.Workbench ActiveDocument="DBOverflow/DBOverflow/DBOverflowApplication.cs">
+  <MonoDevelop.Ide.Workbench ActiveDocument="DBOverflow/DBOverflow/Interface/QuestionBoard.cs">
     <Files>
       <File FileName="DBOverflow/DBOverflow/DBOverflowApplication.cs" Line="119" Column="42" />
+      <File FileName="DBOverflow/DBOverflow/Interface/QuestionBoard.cs" Line="22" Column="137" />
     </Files>
     <Pads>
       <Pad Id="ProjectPad">
@@ -10,8 +11,9 @@
             <Node name="DBOverflow" expanded="True">
               <Node name="DBConnection" expanded="True" />
               <Node name="DBOverflow" expanded="True">
-                <Node name="Interface" expanded="True" />
-                <Node name="DBOverflowApplication.cs" selected="True" />
+                <Node name="Interface" expanded="True">
+                  <Node name="QuestionBoard.cs" selected="True" />
+                </Node>
               </Node>
             </Node>
           </Node>

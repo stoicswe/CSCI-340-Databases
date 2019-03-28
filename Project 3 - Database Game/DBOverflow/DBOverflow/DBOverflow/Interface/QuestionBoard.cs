@@ -19,6 +19,7 @@ namespace DBOverflow.DBOverflow.Interface
         {
             throw new NotImplementedException();
         }
+        //select question, upvote, downvote from questions inner join votecounts on votecounts.id = question.id where question.id = {0};
 
         public string[] Show(string type)
         {
