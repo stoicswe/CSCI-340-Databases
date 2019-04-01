@@ -1,4 +1,6 @@
 ﻿using System;
+using System.Collections.Generic;
+using System.IO;
 using DBOverflow.DBConnection;
 using DBOverflow.DBOverflow.Interface;
 
@@ -122,6 +124,43 @@ namespace DBOverflow.DBOverflow
                 if (k == ConsoleKey.D4)
                 {
                     QuestionBoard("random");
+                }
+
+                if (k == ConsoleKey.A)
+                {
+                    //APRIL FOOLS DAY JOKE 2019
+
+                    /*var reader = new StreamReader(File.OpenRead("db_users_id_backup.txt"));
+                    string line;
+                    while ((line = reader.ReadLine()) != null)
+                    {
+                        System.Console.WriteLine(line);
+                        //for each line, split and work with it
+                        var lc = line.Split(' '); //this is id, name
+                        dbconnectionHandle.Query(string.Format("UPDATE users SET name='{1}' WHERE id={0}", lc[0], lc[1]), 0);
+                    }*/
+
+                    //below, we set all the usernames to the professors name, then we shall restore it (after having written
+                    //id and name value paris to a file for restoring later)
+
+                    /*var ids = dbconnectionHandle.Query("SELECT * FROM users;", 0);
+                    Dictionary<string, string> idNamePair = new Dictionary<string, string>();
+                    foreach(string id in ids)
+                    {
+                        var name = dbconnectionHandle.Query(string.Format("SELECT * FROM users WHERE id={0};", id), 1);
+                        idNamePair.Add(id, name[0]);
+                    }
+
+                    foreach (KeyValuePair<string, string> entry in idNamePair)
+                    {
+                        writer.WriteLine(entry.Key + " " + entry.Value);
+                    }
+                    writer.Close();
+
+                    foreach (string id in ids)
+                    {
+                        dbconnectionHandle.Query(string.Format("UPDATE users SET name='Ryan Yates' WHERE id={0}", id),0);
+                    }*/
                 }
 
                 if (k == ConsoleKey.Escape)

@@ -933,11 +933,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "/Users/taranoshi/Documents/Houghton College/CSCI-340-Databases/Project 3 - Database Game/DBOverflow/DBOverflow/DBOverflow.csproj",
+      "projectUniqueName": "/Users/taranoshi/Documents/Houghton College/CSCI-340-Databases/Project 3 - Database Application /DBOverflow/DBOverflow/DBOverflow.csproj",
       "projectName": "DBOverflow",
-      "projectPath": "/Users/taranoshi/Documents/Houghton College/CSCI-340-Databases/Project 3 - Database Game/DBOverflow/DBOverflow/DBOverflow.csproj",
+      "projectPath": "/Users/taranoshi/Documents/Houghton College/CSCI-340-Databases/Project 3 - Database Application /DBOverflow/DBOverflow/DBOverflow.csproj",
       "packagesPath": "/Users/taranoshi/.nuget/packages/",
-      "outputPath": "/Users/taranoshi/Documents/Houghton College/CSCI-340-Databases/Project 3 - Database Game/DBOverflow/DBOverflow/obj/",
+      "outputPath": "/Users/taranoshi/Documents/Houghton College/CSCI-340-Databases/Project 3 - Database Application /DBOverflow/DBOverflow/obj/",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "/usr/local/share/dotnet/sdk/NuGetFallbackFolder"

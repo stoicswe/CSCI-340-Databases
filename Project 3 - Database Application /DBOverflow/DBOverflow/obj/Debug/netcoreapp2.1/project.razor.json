@@ -2,5 +2,13 @@
   "ProjectFilePath": "/Users/taranoshi/Documents/Houghton College/CSCI-340-Databases/Project 3 - Database Application /DBOverflow/DBOverflow/DBOverflow.csproj",
   "TargetFramework": "netcoreapp2.1",
   "TagHelpers": [],
-  "Configuration": null
+  "Configuration": {
+    "ConfigurationName": "UnsupportedRazor",
+    "LanguageVersion": "1.0",
+    "Extensions": [
+      {
+        "ExtensionName": "UnsupportedRazorExtension"
+      }
+    ]
+  }
 }

@@ -20,3 +20,14 @@ C:/Users/taran/Documents/Houghton College Classwork/CSCI-340-Databases/Project 3
 /Users/taranoshi/Documents/Houghton College/CSCI-340-Databases/Project 3 - Database Game/DBOverflow/DBOverflow/obj/Debug/netcoreapp2.1/DBOverflow.AssemblyInfo.cs
 /Users/taranoshi/Documents/Houghton College/CSCI-340-Databases/Project 3 - Database Game/DBOverflow/DBOverflow/obj/Debug/netcoreapp2.1/DBOverflow.dll
 /Users/taranoshi/Documents/Houghton College/CSCI-340-Databases/Project 3 - Database Game/DBOverflow/DBOverflow/obj/Debug/netcoreapp2.1/DBOverflow.pdb
+/Users/taranoshi/Documents/Houghton College/CSCI-340-Databases/Project 3 - Database Application /DBOverflow/DBOverflow/bin/Debug/netcoreapp2.1/DBOverflow.deps.json
+/Users/taranoshi/Documents/Houghton College/CSCI-340-Databases/Project 3 - Database Application /DBOverflow/DBOverflow/bin/Debug/netcoreapp2.1/DBOverflow.runtimeconfig.json
+/Users/taranoshi/Documents/Houghton College/CSCI-340-Databases/Project 3 - Database Application /DBOverflow/DBOverflow/bin/Debug/netcoreapp2.1/DBOverflow.runtimeconfig.dev.json
+/Users/taranoshi/Documents/Houghton College/CSCI-340-Databases/Project 3 - Database Application /DBOverflow/DBOverflow/bin/Debug/netcoreapp2.1/DBOverflow.dll
+/Users/taranoshi/Documents/Houghton College/CSCI-340-Databases/Project 3 - Database Application /DBOverflow/DBOverflow/bin/Debug/netcoreapp2.1/DBOverflow.pdb
+/Users/taranoshi/Documents/Houghton College/CSCI-340-Databases/Project 3 - Database Application /DBOverflow/DBOverflow/obj/Debug/netcoreapp2.1/DBOverflow.csprojAssemblyReference.cache
+/Users/taranoshi/Documents/Houghton College/CSCI-340-Databases/Project 3 - Database Application /DBOverflow/DBOverflow/obj/Debug/netcoreapp2.1/DBOverflow.csproj.CoreCompileInputs.cache
+/Users/taranoshi/Documents/Houghton College/CSCI-340-Databases/Project 3 - Database Application /DBOverflow/DBOverflow/obj/Debug/netcoreapp2.1/DBOverflow.AssemblyInfoInputs.cache
+/Users/taranoshi/Documents/Houghton College/CSCI-340-Databases/Project 3 - Database Application /DBOverflow/DBOverflow/obj/Debug/netcoreapp2.1/DBOverflow.AssemblyInfo.cs
+/Users/taranoshi/Documents/Houghton College/CSCI-340-Databases/Project 3 - Database Application /DBOverflow/DBOverflow/obj/Debug/netcoreapp2.1/DBOverflow.dll
+/Users/taranoshi/Documents/Houghton College/CSCI-340-Databases/Project 3 - Database Application /DBOverflow/DBOverflow/obj/Debug/netcoreapp2.1/DBOverflow.pdb
