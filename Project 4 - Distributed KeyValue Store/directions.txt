@@ -1,0 +1,18 @@
+Direction to test on distributed system
+
+First, ssh into the computer lab to work on this computer :
+    ssh cslab@d09100
+
+Second, get into the houghton git repository on that computer:
+    ssh -nNT -L 3000:localhost:3000 cslab@D09101
+Put it to the background:
+    ctrl z, bg
+Cd into KeyValue:
+    cd KeyValue
+Update:
+    git pull
+Run the website:
+    ./run.sh
+
+Third, look at the website on that machine by ssh local hosting it in a new terminal at 5050:
+    ssh -nNT -L 5050:localhost:5050 cslab@D09100
